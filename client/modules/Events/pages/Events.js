@@ -1,5 +1,5 @@
 /**
- * Login Page
+ * Venues Page
  */
 import React from 'react';
 // import { connect } from 'react-redux';
@@ -8,11 +8,11 @@ import React from 'react';
 
 // require('../../../main.css');
 
-class Login extends React.Component {
+class Events extends React.Component {
   render() {
     return(
       <div>
-        <h1>Login</h1>
+        <h1>Venues</h1>
       </div>
       )
   }
@@ -25,4 +25,4 @@ class Login extends React.Component {
 // }
 // export default connect(mapStateToProps)(Login);
 
-export default Login;
+export default Events;
