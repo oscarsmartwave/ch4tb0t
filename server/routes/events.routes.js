@@ -6,6 +6,10 @@ router.route('/setup/events').get(EventsController.getEvents);
 
 router.route('/setup/events').post(EventsController.addEvent);
 
+router.route('/setup/events/add').get(function(req, res) {
+	res.json({tables: "Adding Event"});
+});
+
 router.route('/setup/events/:cuid').get(EventsController.getEvent);
 
 router.route('/setup/events/:cuid').post(EventsController.updateEvent);

@@ -1,5 +1,5 @@
 /**
- * Venues Page
+ * Tables Page
  */
 import React from 'react';
 // import { connect } from 'react-redux';
@@ -8,11 +8,11 @@ import React from 'react';
 
 // require('../../../main.css');
 
-class Venue extends React.Component {
+class Tables extends React.Component {
   render() {
     return(
       <div>
-        <h1>Single Venue - Edit</h1>
+        <h1>Tables Setup</h1>
       </div>
       )
   }
@@ -25,4 +25,4 @@ class Venue extends React.Component {
 // }
 // export default connect(mapStateToProps)(Login);
 
-export default Venue;
+export default Tables;

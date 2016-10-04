@@ -6,6 +6,10 @@ router.route('/setup/venues').get(VenuesController.getVenues);
 
 router.route('/setup/venues').post(VenuesController.addVenue);
 
+router.route('/setup/venues/add').get(function(req, res) {
+	res.json({venues: "Adding Venue"});
+});
+
 router.route('/setup/venues/:cuid').get(VenuesController.getVenue);
 
 router.route('/setup/venues/:cuid').post(VenuesController.updateVenue);

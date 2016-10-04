@@ -12,7 +12,7 @@ class Events extends React.Component {
   render() {
     return(
       <div>
-        <h1>Venues</h1>
+        <h1>Events Schedule</h1>
       </div>
       )
   }

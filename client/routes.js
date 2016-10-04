@@ -55,13 +55,95 @@ export default (
         });
       }} 
     />
-    <Route 
+    <Route
+      path="setup/venues/add" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Venues/pages/Add').default);
+        });
+      }} 
+    />
+    <Route
       path="setup/venues/:cuid" 
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
           cb(null, require('./modules/Venues/pages/Venue').default);
         });
-      }} 
+      }}
     />
+    <Route
+      path="setup/tables" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Tables/pages/Tables').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/tables/add" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Tables/pages/Add').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/tables/:cuid" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Tables/pages/Table').default);
+        });
+      }}
+    />
+    <Route 
+      path="setup/events" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Events/pages/Events').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/events/add" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Events/pages/Add').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/events/:cuid" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Events/pages/Event').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/promoters" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Promoters/pages/Promoters').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/promoters/add" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Promoters/pages/Add').default);
+        });
+      }}
+    />
+    <Route
+      path="setup/promoters/:cuid" 
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Promoters/pages/Promoter').default);
+        });
+      }}
+    />
+
+
   </Route>
 );

@@ -8,11 +8,11 @@ import React from 'react';
 
 // require('../../../main.css');
 
-class Venue extends React.Component {
+class Venues extends React.Component {
   render() {
     return(
       <div>
-        <h1>Single Venue - Edit</h1>
+        <h1>Add Venue</h1>
       </div>
       )
   }
@@ -25,4 +25,4 @@ class Venue extends React.Component {
 // }
 // export default connect(mapStateToProps)(Login);
 
-export default Venue;
+export default Venues;
